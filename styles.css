@@ -1,0 +1,174 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 130px -120px, 180px 100px;
+}
+
+.container {
+    /* height: 100vh; */
+    max-width: 1280px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+main {
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.star {
+    width: 12px;
+}
+
+span {
+    position: relative;
+    top: -1px;
+    color: hsl(300, 43%, 22%);
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.rating1 {
+    border-radius: 5px;
+    width: 260px;
+    height: fit-content;
+    padding: 10px 30px;
+    background: hsl(300, 24%, 96%);
+    position: absolute;
+    top: 160px;
+    left: 710px;
+}
+
+.rating2 {
+    border-radius: 5px;
+    width: 280px;
+    height: fit-content;
+    background: hsl(300, 24%, 96%);
+    position: absolute;
+    top: 230px;
+    left: 750px;
+    padding: 10px 30px;
+}
+
+.rating3 {
+    border-radius: 5px;
+    width: 280px;
+    height: fit-content;
+    background: hsl(300, 24%, 96%);
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    padding: 10px 30px;
+}
+
+.heading {
+    color: hsl(300, 43%, 22%);
+    font-size: 20px;
+    font-weight: 700;
+    width: 390px;
+}
+
+.subheading {
+    color: hsl(303, 10%, 53%);
+    font-size: 15px;
+    width: 450px;
+    line-height: 1.6;
+    font-weight: 200;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.user-img {
+    position: relative;
+    top: 5px;
+    left: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.testimonials {
+    position: relative;
+    background: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    height: fit-content;
+    width: 280px;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+
+}
+
+.testimony {
+    padding: 10px;
+    padding-top: 30px;
+    line-height: 1.5;
+}
+
+.user-name {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    font-weight: 700;
+}
+
+.user-designation {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    color: hsl(333, 80%, 67%)
+}
+
+.Verifiedbuyer2 {
+    margin-top: 30px;
+}
+
+.Verifiedbuyer3 {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        height: initial;
+        /* This makes the container take 100% height of the viewport of the browser */
+    }
+
+    main {
+        align-items: center;
+    }
+
+    .ratingsection {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .parent {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
